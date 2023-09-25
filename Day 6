@@ -1,0 +1,26 @@
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int N,B,area,Max=0;;
+        cin>>N>>B;
+        while(N--){
+            int w,h,p;
+            cin>>w>>h>>p;
+            
+            if(p<=B)
+            {
+                area = w * h;
+                Max = max(Max,area);
+            }
+        }
+        if(Max == 0)
+            cout<<"no tablet"<<endl;
+        else
+            cout<<Max<<endl;
+    }
+}
