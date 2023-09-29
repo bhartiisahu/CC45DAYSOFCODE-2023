@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class numpallindrome {
+    public static void main(String[] args) {
+        try (Scanner sc = new Scanner(System.in)) {
+            int result=0;
+            System.out.println("Enter the number to check pallindrom : ");
+            int num=sc.nextInt();
+            do{
+                int rem=num%10;
+                if(num<10)
+                {
+                    result=(result*10)+num;
+                }
+                result=(result*10)+rem;
+                // if(num<10)
+                // {
+                //     result=(result*10)+num;
+                // }
+                num=num/10;
+            }while(num!=0);
+
+            if(num==result)
+            {
+                System.out.println("number is pallindrom");
+            }
+            else
+            {
+                System.out.println("number is not pallindrom");
+            }
+        }
+    }
+}
