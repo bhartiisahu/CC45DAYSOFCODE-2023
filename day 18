@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t,a,b;
+	cin>>t;
+	while(t--)
+	{
+	    cin>>a>>b;
+	    if(a>b)
+	    {
+	       int p=7-a;
+	       cout<<p<<endl;
+	    }
+	    else
+	    {
+	        int q=7-b;
+	        cout<<q<<endl;
+	    }
+	}
+	return 0;
+}
