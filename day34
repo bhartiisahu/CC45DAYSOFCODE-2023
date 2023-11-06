@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a,b,c,x,t;
+	cin>>t;
+	while(t--)
+	{
+	    cin>>a;
+	    cin>>b;
+	    cin>>c;
+	    cin>>x;
+	    
+	    if(a+b>=x)
+	    {
+	        cout<<"YES"<<endl;
+	    }
+	    else if(c+b>=x)
+	    {
+	        cout<<"YES"<<endl;
+	    }
+	    else if(a+c>=x)
+	    {
+	        cout<<"YES"<<endl;
+	    }
+	    else
+	    {
+	        cout<<"NO"<<endl;
+	    }
+	}
+	return 0;
+}
