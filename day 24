@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int x,y;
+	    cin>>x>>y;
+	    intp=x/y;
+	    if(p<=20)
+	    {
+	        std::cout << x/y << std::endl;
+	    }
+	    else
+	    {
+	        std::cout << 20 << std::endl;
+	    }
+	}
+	return 0;
+}
