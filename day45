@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int s,x,y,z;
+	    cin>>s>>x>>y>>z;
+	    int r;
+	    r=s-(x+y);
+	    if(z<=r)
+	    {
+	        std::cout << 0 << std::endl;
+	    }
+	    else if(r+x>=z ||r+y>=z)
+	    {
+	        std::cout << 1 << std::endl;
+	    }
+	    else
+	    {
+	        std::cout << 2 << std::endl;
+	    }
+	}
+	return 0;
+}
