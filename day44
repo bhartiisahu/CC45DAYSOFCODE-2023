@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	int x,t;
+	cin>>t;
+	while(t--)
+	{
+	    cin>>x;
+	    int res=x/3;
+	    if(x%3==0)
+	    {
+	        cout<<"0"
+	    }
+	    else
+	    {
+	        cout<<((res+1)*3)-x<<endl;
+	    }
+	    
+	}
+	return 0;
+}
